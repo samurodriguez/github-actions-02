@@ -1,0 +1,12 @@
+name: exercise-01
+on:
+  push:
+    branches-ignore:
+      - main
+  schedule:
+    - cron: "5/2 * * * *"
+jobs:
+  log-date:
+    runs-on: ubuntu-latest
+    steps:
+      - run: "date"
