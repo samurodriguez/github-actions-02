@@ -10,3 +10,13 @@ jobs:
         run: "echo ${{ github.ref_name }}"
       - name: "log github actor"
         run: "echo ${{ github.actor }}"
+  log-node-version:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [20, 21, 22]
+    steps:
+      - uses: actions/setup-node@v6
+        with:
+          node-version: ${{ matrix.node }}
+      - run: "node --version"
