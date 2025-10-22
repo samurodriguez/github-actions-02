@@ -1,0 +1,11 @@
+name: "Events"
+on:
+  push:
+    branches:
+      - main
+jobs:
+  log-greeting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "show date"
+        run: "date"
