@@ -11,5 +11,5 @@ jobs:
   log-greeting:
     runs-on: ubuntu-latest
     steps:
-      - name: "show date"
-        run: "date"
+      - name: "show greeting"
+        run: "echo 'holaaa'"
