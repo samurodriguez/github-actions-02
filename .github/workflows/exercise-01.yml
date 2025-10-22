@@ -9,4 +9,5 @@ jobs:
   log-date:
     runs-on: ubuntu-latest
     steps:
-      - run: "date"
+      - name: "show date"
+        run: "date"
